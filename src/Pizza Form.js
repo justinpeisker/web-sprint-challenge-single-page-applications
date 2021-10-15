@@ -21,7 +21,7 @@ export default function PizzaForm(props) {
     }
 
     return (
-        <form className= 'form container' onSubmit= {onSubmit} id= 'pizza-form'>
+        <form id= 'pizza-form' className= 'form container' onSubmit= {onSubmit} >
             <div className= 'form inputs'>
                 <label>Name
                     <input
@@ -35,7 +35,7 @@ export default function PizzaForm(props) {
                 </label>
 
                 <label>Size
-                    <select value= {values.size} name= 'size' onChange= {onChange} id= 'size-dropdown'>
+                    <select id= 'size-dropdown' value= {values.size} name= 'size' onChange= {onChange} >
                         <option value= ''> -- select a size --</option>
                         <option value= 'Large'>Large</option>
                         <option value= 'Medium'>Medium</option>

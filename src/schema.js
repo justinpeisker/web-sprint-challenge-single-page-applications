@@ -4,7 +4,7 @@ const schema = yup.object().shape({
     name: yup
         .string()
         .trim()
-        .required('Name Required'),
+        .required('name must be at least 2 characters'),
 
     size: yup
         .string()

@@ -36,15 +36,15 @@ const App = () => {
   //   setFormValues({...formValues, [inputName]: inputValue})
   // }
 
-  const getOrder = () => {
-    axios.get('https://reqres.in/api/orders')
-    .then(res => {
-      console.log(res);
-      setOrder(res.data);
-    }).catch(err => {
-      console.error(err);
-    })
-  }
+  // const getOrder = () => {
+  //   axios.get('https://reqres.in/api/orders')
+  //   .then(res => {
+  //     console.log(res);
+  //     setOrder(res.data);
+  //   }).catch(err => {
+  //     console.error(err);
+  //   })
+  // }
   const postNewOrder = newOrder => {
     axios.post('https://reqres.in/api/orders')
       .then(res => {
@@ -76,9 +76,9 @@ const App = () => {
     postNewOrder(newOrder)
   }
 
-  useEffect(() => {
-    getOrder()
-  }, [])
+  // useEffect(() => {
+  //   getOrder()
+  // }, [])
 
   useEffect(() => {
     schema.isValid(formValues).then(valid => setDisabled(!valid))
