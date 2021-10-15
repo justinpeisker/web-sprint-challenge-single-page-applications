@@ -78,6 +78,15 @@ export default function PizzaForm(props) {
                         onChange= {onChange}
                     />
                 </label>
+
+                <label>Special Instructions
+                    <input  
+                        type= 'text'
+                        name= 'special'
+                        value= {values.special}
+                        onChange= {onChange}
+                        />
+                </label>
             </div>
             <div className= 'form submit'>
                 <button id= 'order-button' disabled= {disabled}>Place Order</button>
