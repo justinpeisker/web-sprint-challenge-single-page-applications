@@ -81,6 +81,7 @@ export default function PizzaForm(props) {
 
                 <label>Special Instructions
                     <input  
+                        id= 'special-text'
                         type= 'text'
                         name= 'special'
                         value= {values.special}
