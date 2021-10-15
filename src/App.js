@@ -10,11 +10,11 @@ import schema from './schema';
 const initialFormValues = {
   name: '',
   size: '',
-  pepperoni: false,
-  sausage: false,
-  mushroom: false,
-  pepper: false,
-  special:  '',
+  Pepperoni: false,
+  Sausage: false,
+  Mushroom: false,
+  Pepper: false,
+  Special:  '',
 }
 
 const initialFormErrors = {
@@ -32,24 +32,12 @@ const App = () => {
   const[formErrors, setFormErrors] = useState(initialFormErrors);
   const[disabled, setDisabled] = useState(initialDisabled)
 
-  // const updateForm = (inputName, inputValue) => {
-  //   setFormValues({...formValues, [inputName]: inputValue})
-  // }
-
-  // const getOrder = () => {
-  //   axios.get('https://reqres.in/api/orders')
-  //   .then(res => {
-  //     console.log(res);
-  //     setOrder(res.data);
-  //   }).catch(err => {
-  //     console.error(err);
-  //   })
-  // }
+  
   const postNewOrder = newOrder => {
     axios.post('https://reqres.in/api/orders')
       .then(res => {
         console.log(res)
-        setOrder([...order, res.data])
+        setOrder([...order, formValues])
       }).catch(err => {
         console.error(err);
       }) 

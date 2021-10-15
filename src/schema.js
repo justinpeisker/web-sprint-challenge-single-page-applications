@@ -10,10 +10,10 @@ const schema = yup.object().shape({
         .string()
         .required('Size selection required'),
 
-    pepperoni: yup.boolean(),
-    sausage: yup.boolean(),
-    mushroom: yup.boolean(),
-    pepper: yup.boolean(),
+    Pepperoni: yup.boolean(),
+    Sausage: yup.boolean(),
+    Mushroom: yup.boolean(),
+    Pepper: yup.boolean(),
         
 })
 
