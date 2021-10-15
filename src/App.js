@@ -59,7 +59,12 @@ const App = () => {
     const newOrder = {
       name: formValues.name.trim(),
       size: formValues.size.trim(),
-      toppings: ['pepperoni', 'sausage', 'mushroom', 'pepper'].filter(topping => !!formValues[topping])
+      // toppings: ['pepperoni', 'sausage', 'mushroom', 'pepper'].filter(topping => !!formValues[topping])
+      Pepperoni: formValues.Pepperoni,
+      Sausage: formValues.Sausage,
+      Mushroom: formValues.Mushroom,
+      Pepper: formValues.Pepper,
+      Special: formValues.Special
     }
     postNewOrder(newOrder)
   }

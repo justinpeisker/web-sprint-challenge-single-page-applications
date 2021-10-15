@@ -83,7 +83,7 @@ export default function PizzaForm(props) {
                     <input  
                         id= 'special-text'
                         type= 'text'
-                        name= 'special'
+                        name= 'Special'
                         value= {values.special}
                         onChange= {onChange}
                         />

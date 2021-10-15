@@ -14,6 +14,9 @@ const schema = yup.object().shape({
     Sausage: yup.boolean(),
     Mushroom: yup.boolean(),
     Pepper: yup.boolean(),
+
+    Special: yup
+        .string()
         
 })
 
