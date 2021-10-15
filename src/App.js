@@ -34,10 +34,10 @@ const App = () => {
 
   
   const postNewOrder = newOrder => {
-    axios.post('https://reqres.in/api/orders')
+    axios.post('https://reqres.in/api/orders', newOrder)
       .then(res => {
         console.log(res)
-        setOrder([...order, formValues])
+        setOrder([...order, res.data])
       }).catch(err => {
         console.error(err);
       }) 
