@@ -80,7 +80,7 @@ const App = () => {
 
   return (
     <>
-      <nav>
+      <nav className='App-header'>
         <h1>Lambda Eats</h1>
         <div className= 'nav links'>
           <Link to= '/'>Home</Link>
