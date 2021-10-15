@@ -35,8 +35,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
+
+    It can be used as a substitute for <Route> in some instances.  It matches the URL just like Route.
+
 1. How would you explain form validation to someone who has never programmed before?
+
+    Form validation helps guide to user to enter the information the server wants.  It does this by requiring certain feilds to be filled out, as well as, requiring certain formats for a given feild.  It serves as a gatekeeper.  The form cannot be submitted until certain, predefined conditions are met.
+
 1. In 1-2 sentences, define end to end testing.
+
+    It is in the name.  It is testing that begins at the very start of a web application (ie. elements existing on a page).  And runs to the end of the application (Ex. a user navigating to the page, interacting with a form and submitting it)
 
 ## Instructions
 
@@ -56,7 +64,8 @@ Your finished project must include all of the following requirements:
 - [ ] A order form that has a "/pizza" route and shows the form
 - [ ] A form with an id of "pizza-form"
 - [ ] A name text input field with an id of "name-input"
-- [ ] Validation for name and the error message is "name must be at least 2 characters" (Use this exact error message to make sure tests pass) ::: VERY IMPORTANT TO USE THAT EXACT ERROR MESSAGE (casing included!)
+- [ ] Validation for name and the error message is "
+" (Use this exact error message to make sure tests pass) ::: VERY IMPORTANT TO USE THAT EXACT ERROR MESSAGE (casing included!)
 - [ ] A dropdown for pizza size with an id of "size-dropdown"
 - [ ] A checklist for toppings - at least 4 (hint: name each separately!)
 - [ ] Text input for special instructions with an id of "special-text"
