@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
-import {Link} from 'react-router-dom';
+import {Link, Route} from 'react-router-dom';
 import PizzaForm from './Pizza Form';
+import Home from './Home';
 import axios from 'axios';
 import * as yup from 'yup';
 import schema from './schema';
@@ -86,19 +87,28 @@ const App = () => {
 
   return (
     <>
-      <h1>Lambda Eats</h1>
-      <div className= 'nav links'>
-        <Link to= '/'>Home</Link>
-        <Link to= '/pizza'>Order</Link>
-      </div>
-      <p>You can remove this code and create your own header</p>
-      <PizzaForm 
-      values = {formValues}
-      change = {inputChange}
-      submit= {formSubmit}
-      disabled= {disabled}
-      errors= {formErrors}
-      />
+      <nav>
+        <h1>Lambda Eats</h1>
+        <div className= 'nav links'>
+          <Link to= '/'>Home</Link>
+          <Link to= '/pizza'>Order</Link>
+        </div>
+        <p></p>
+      </nav>
+
+      <Route path= '/'>
+        <Home />
+        
+      </Route>
+      <Route path= '/pizza'>
+        <PizzaForm 
+          values = {formValues}
+          change = {inputChange}
+          submit= {formSubmit}
+          disabled= {disabled}
+          errors= {formErrors}
+          />
+      </Route>
     </>
   );
 };
